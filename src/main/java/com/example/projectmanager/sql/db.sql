@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS projectmanager DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+
+USE projectmanager;
+
+
+CREATE TABLE IF NOT EXISTS project (
+    id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT
+);
