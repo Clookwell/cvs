@@ -27,6 +27,6 @@
 
 1. **Склонуй репозиторій:**
 
-git clone https://github.com/Clookwell/cvs
-cd csv
-mvs spring-boot:run
+- git clone https://github.com/Clookwell/cvs
+- cd csv
+- mvs spring-boot:run
