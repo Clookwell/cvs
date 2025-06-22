@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Project Manager</title>
+</head>
+<body>
+    <h1>Проєкти</h1>
+    <form th:action="@{/projects}" method="post">
+        <input type="text" name="name" placeholder="Назва проєкту" required />
+        <input type="text" name="description" placeholder="Опис" required />
+        <button type="submit">Додати</button>
+    </form>
+
+    <ul>
+        <li th:each="project : ${projects}">
+            <strong th:text="${project.name}">Назва</strong>:
+            <span th:text="${project.description}">Опис</span>
+        </li>
+    </ul>
+</body>
+</html>
