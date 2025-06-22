@@ -29,4 +29,4 @@
 
 - git clone https://github.com/Clookwell/cvs
 - cd csv
-- mvs spring-boot:run
+- mvn spring-boot:run
